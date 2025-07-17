@@ -29,7 +29,35 @@ header img {
   font-weight: bold;
   margin: 0px 15px;
 }
+.btn-menu:hover {
+  color: #c8102e;
+}
 hr {
   width: 90%;
   margin: 0 auto;
+}
+.cont-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  margin: 0 20px;
+}
+footer span {
+  color: #ffffff;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+}
+.btn-footer {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 10px;
+}
+.btn-footer:hover {
+  color: #c8102e;
 }
