@@ -50,6 +50,9 @@ footer ul {
   display: flex;
   list-style: none;
 }
+footer a {
+  text-decoration: none;
+}
 .btn-footer {
   text-decoration: none;
   color: #ffffff;
