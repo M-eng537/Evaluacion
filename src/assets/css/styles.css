@@ -307,3 +307,27 @@ footer .flex {
     margin: 0 6px;
   }
 }
+
+.sobreNosotros {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1c1c1c; 
+  color: #ffffff; 
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.sobreNosotros h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sobreNosotros p {
+  font-size: 16px;
+  line-height: 1.6;
+}
