@@ -18,6 +18,7 @@ header {
   align-items: center;
   width: 90%;
   justify-content: space-between;
+  padding: 0 10px;
 }
 header img {
   height: 150px;
@@ -28,6 +29,7 @@ header img {
   font-size: 22px;
   font-weight: bold;
   margin: 0px 15px;
+  list-style: none;
 }
 .btn-menu:hover {
   color: #c8102e;
@@ -35,29 +37,71 @@ header img {
 hr {
   width: 90%;
   margin: 0 auto;
+  color: #b0b0b0;
 }
-.cont-footer {
+footer {
+  background-color: #1c1c1c;
+  padding: 20px 0;
+  font-family: "Montserrat", sans-serif;
+}
+footer .cont-footer {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
   align-items: center;
-  margin: 0 20px;
+  gap: 10px;
 }
-footer span {
-  color: #ffffff;
-}
-footer ul {
-  display: flex;
-  list-style: none;
-}
+footer span,
 footer a {
-  text-decoration: none;
-}
-.btn-footer {
-  text-decoration: none;
   color: #ffffff;
-  margin: 0 10px;
+  font-size: 14px;
+  text-decoration: none;
 }
-.btn-footer:hover {
+footer a:hover {
   color: #c8102e;
+}
+footer .btn-footer svg {
+  fill: currentColor;
+  transition: color 0.3s ease;
+}
+footer .btn-footer:hover svg {
+  color: #c8102e;
+}
+footer .flex {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 767px) {
+  #navbar-default {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 50vw;
+    z-index: 50;
+  }
+  #navbar-default ul {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  #navbar-default a {
+    padding: 5px;
+    width: 100%;
+  }
+  footer .cont-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .flex {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn-menu {
+    margin: 0 6px;
+  }
 }
